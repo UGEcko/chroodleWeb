@@ -82,7 +82,7 @@ const v3Envs = [
 // Man why does this have to be so complicated??????????
 
 function downloadFromGithub(version, env) {
-    fetch(`https://raw.githubusercontent.com/UGEcko/Chroodle/refs/heads/main/EnvironmentData/${version}/EnvInfo_${env}.json`)
+    fetch(`https://raw.githubusercontent.com/UGEcko/Chroodle/refs/heads/main/EnvironmentData/${version}/EnvInfo_${env}Environment.json`)
       .then(response => response.blob())
       .then(blob => {
         const filename = `EnvInfo_${env}_${version}.json`

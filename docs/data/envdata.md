@@ -222,7 +222,131 @@ A directory housing extensive BeatSaber Environment information
 
 <div id="copy-status">No file downloaded yet.</div>
 
+<hr>
 
+??? info "Supported Components"
+    99% of components will have a `Transform` component, but some may have more to help out with specific cases.
+
+    **The following components will be listed with selected properties:**
+    
+    * **Transform**
+    * * position
+    * * localPosition
+    * * rotation
+    * * localRotation
+    * * localScale
+    * **TrackLaneRingsManager**
+    * * ringCount
+    * * ringPositionZStep
+    * **MeshFilter**
+    * * boundCenter
+    * * boundSize
+    * **TubeBloomPrePassLight**
+    * * colorAlphaMultiplier
+    * * bloomFogIntensityMultiplier
+    * * length
+    * * width
+    * **TubeBloomPrePassLightWithId**
+    * * tubeLightId
+    * **DirectionalLightWithId**
+    * * lightId
+    * **Animator**
+    * * animatorParameters
+    * * animatorLayerNames
+    * **LightManager**
+    * * directionalLightDirections
+    * * directionalLightPositions
+    * **DirectionalLight**
+    * * lightIntensity
+    * * lightRadius
+    * * lightRotation
+    * **BakedReflectionProbe**
+    * * probeSize
+    * * probePosition
+    * **SpriteLightWithId**
+    * * spriteLightId
+    * * intensity
+    * **RectangleFakeGlow**
+    * * rectangleSize
+    * **RectangleFakeGlowWithLightId**
+    * * rectangleLightId
+    * **EnvironmentBrandingManager**
+    * * brandingObjects
+    * **ParticleSystemWithLightId**
+    * * particleLightId
+    * * particleLightIntensity
+    * **InstancedMaterialLightWithId**
+    * * materialLightId
+    * * materialLightIntensity
+    * **MeshCollider**
+    * * meshBoundsCenter
+    * * meshBoundsSize
+    * **CloudsMeshGenerator (1.37.1+ Only)**
+    * * cloudsBoundSize
+    * * cloudsBoundCenter
+    * **CustomBoundingBox**
+    * * customBoundCenter
+    * * customBoundSize
+    * **Animation**
+    * * clipFrameRate
+    * * clipLength
+    * **SmoothStepPositionEventEffect**
+    * * minY
+    * * maxY
+    * * stepSize
+    * * startPos
+    * * easing
+    * **LightGroupCircularLayouter**
+    * * circularRadius
+    * * circularAngle
+    * * groupId
+    * **SmoothStepPositionGroupEventEffect**
+    * * groupMinY
+    * * groupMaxY
+    * * groupStepSize
+    * * groupStartPos
+    * * groupEasing
+
+    **The following components will be listed *without* any properties listed:**
+
+    * BloomFogEnvironment
+    * EnvironmentSceneSetup
+    * LightWithIdManager
+    * Canvas
+    * ParticleSystem
+    * Spectrogram
+    * BloomPrePassBackgroundColorsGradient
+    * Mirror
+    * SaberBurnMarkArea
+    * TrackLaneRing
+    * LightColorGroupEffectManager
+    * LightRotationGroupEffectManager
+    * LightGroup
+    * LightGroupLinearLayouter
+    * LightRotationGroup
+    * ContinuousFireEffect
+    * BurstFireEffect
+    * LightmapLightWithIdsGroupEntry
+    * FloatingTransformEffect
+    * LightTranslationGroup
+    * TransformSpectrogram
+    * ColorArrayLightWithIds
+    * LevelFailedTextOverride
+    * MoveInDirectionEffect
+    * TubeBloomPrePassLightCollisionEffect
+    * TubeBloomPrePassLightReflectionEffect
+    * MaterialLightWithId
+    * BTSCharacterSpawnController
+    * RigidBody
+    * LightmapLightWithIds
+    * ParticleSystemLightWithIds
+    * GameObjectSwitchEventEffect
+    * FloorLightTilesGrid
+    * LightColorGroup
+    * LightColorGroupParent
+    * SpectrogramRow
+    * VideoPlayer
+    * TransformLayouter
 <hr>
 
 ## PAQ
