@@ -42,16 +42,16 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Learn:
-    - Creating Environments : categories/learn/envs.md
-    - Fog : categories/learn/fog.md
-    - Geometry : categories/learn/geometry.md
-    - Runtime Unity Editor : categories/learn/rue.md
+    - Creating Environments : learn/envs.md
+    - Fog : learn/fog.md
+    - Geometry : learn/geometry.md
+    - Runtime Unity Editor : learn/rue.md
   - Data:
-    - Chroma Logs : categories/data/clogs.md
-    - Environment Data : categories/data/envdata.md
-    - Geometry Ref. Table : categories/data/geotable.md
+    - Chroma Logs : data/clogs.md
+    - Environment Data : data/envdata.md
+    - Geometry Ref. Table : data/geotable.md
   - Other:
-    - Error Troubleshooting : categories/other/etroubleshoot.md
+    - Error Troubleshooting : other/etroubleshoot.md
 
 extra_javascript:
   - js/extra.js
