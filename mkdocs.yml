@@ -1,0 +1,61 @@
+site_name: Chroodle
+site_url: https://ugecko.github.io/chroodleWeb/
+theme:
+  language: en
+  logo: assets/chroodle.png
+  features:
+    - content.code.select
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+  name: material
+  font:
+    text: Fauna One
+    code: JetBrains Mono
+  icon:
+    annotation: material/help-circle
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+
+plugins:
+  - search
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Learn:
+    - Creating Environments : categories/learn/envs.md
+    - Fog : categories/learn/fog.md
+    - Geometry : categories/learn/geometry.md
+    - Runtime Unity Editor : categories/learn/rue.md
+  - Data:
+    - Chroma Logs : categories/data/clogs.md
+    - Environment Data : categories/data/envdata.md
+    - Geometry Ref. Table : categories/data/geotable.md
+  - Other:
+    - Error Troubleshooting : categories/other/etroubleshoot.md
+
+extra_javascript:
+  - js/extra.js
+extra_css:
+  - stylesheets/extra.css
+
+copyright: ❤️ Handcrafted with love by the BeatSaber community ❤️
