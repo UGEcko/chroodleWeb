@@ -18,33 +18,64 @@ If an error you are experiencing isnt covered here, feel free to reach out for s
 ??? failure "example error"
     <hr>
 
-    ### Log Snippet
+    > **Log Snippet**
+
     ```
     example snippet
     ```
 
-    ### Explanation
+    > **Explanation**
+
     *Example Explanation*
 
-    ### Solution
+    > **Solution**
+
     *Example Solution*
 
     <hr>
 
 ## ReMapper
 
-??? failure "example error"
+??? failure "'Expected double-quoted property in JSON'"
     <hr>
 
-    ### Log Snippet
+    > **Log Snippet**
+
     ```
-    example snippet
+    error: Uncaught (in promise) SyntaxError: Expected double-quoted property name in JSON at position X (line X column X)
     ```
 
-    ### Explanation
-    *Example Explanation*
+    > **Explanation**
 
-    ### Solution
-    *Example Solution*
+    A JSON file (commonly ``info.dat`` or a difficulty file) contains a property that isn't wrapped in double quotes. (Single quotes or noquotes aren't allowed.)
+    <br>
+    **Usually this may happen if you tamper with the ``.dat`` without being careful or lack the knowledge of JSON.**
+
+    Correct:
+    ```json
+
+      "_beatsPerMinute" : 69
+
+    ```
+    Incorrect:
+    ```json
+      '_beatsPerMinute' : 69
+    ```
+
+    > **Solution**
+    
+    _While this can happen to any JSON file, the log gives us partial information to determining which file this is occuring in._
+
+    **If the log contains ``at loadInfo (...)``, the ``info.dat`` file is causing this error.** <br>
+
+    * At the end of the first line of the error, in parentheses is the location of where the error occured in the ``info.dat`` file. Ex: ``(line 7 column 3)``
+
+    **If the log contains ``at readDifficulty(...)``, a difficulty file is causing this error.** <br>
+    
+    * While the log doesn't explicitly log the file where this is occuring in, it still provides the location of the error in the JSON (Ex: ``(line 7 column 3)``). <br> Look through each difficulty at the given line number and it should show up.
+
+    **Note: If you are using Visual Studio Code, it *should* highlight the affected file AND property.**
+
+    Lastly, replace any single quotes with double quotes: [``' -> "``].
 
     <hr>
