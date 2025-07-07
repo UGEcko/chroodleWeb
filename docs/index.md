@@ -26,6 +26,8 @@ Here is what Chroodle has to offer. Below you can be redirected to learn, view d
 ### Other
 [Error Troubleshooting](other/etroubleshoot.md) <br> : A problem -> solution page for those encountering commonly found issues in select-environments
 
+[Contribute](other/contribute.md) <br> : Interested in contributing to Chroodle? Check this page out!
+
 <hr>
 
 

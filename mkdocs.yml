@@ -52,6 +52,7 @@ nav:
     - Geometry Ref. Table : data/geotable.md
   - Other:
     - Error Troubleshooting : other/etroubleshoot.md
+    - Contribute : other/contribute.md
 
 extra_javascript:
   - js/extra.js
