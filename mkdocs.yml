@@ -16,7 +16,7 @@ theme:
     text: Fauna One
     code: JetBrains Mono
   icon:
-    annotation: material/help-circle
+    annotation: material/plus-circle
   palette:
     scheme: slate
     primary: custom
