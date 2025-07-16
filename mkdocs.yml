@@ -38,6 +38,9 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
 
 nav:
   - Home: index.md
@@ -49,10 +52,11 @@ nav:
   - Data:
     - Chroma Logs : data/clogs.md
     - Environment Data : data/envdata.md
-    - Geometry Ref. Table : data/geotable.md
+    - Reference Tables : data/reftable.md
+    - Useful Links: data/links.md
   - Other:
     - Error Troubleshooting : other/etroubleshoot.md
-    - Contribute : other/contribute.md
+    - Contribute : other/contribute.md 
 
 extra_javascript:
   - js/extra.js
