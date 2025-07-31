@@ -43,6 +43,7 @@
 
 1. Select your version of BeatSaber
 2. Click on the environment you are using to copy the log. (Alphabetical)
+3. View it on [Regexr](https://regexr.com) or a similar website.
 
 === "1.29.1"
 
