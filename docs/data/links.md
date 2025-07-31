@@ -26,6 +26,8 @@ To organize and future proof, links will be organized in categories, some being 
 
 [easings.net](https://easings.net) <br> : All available easings for use **excluding easeStep** (Click on them for a slew of stuff including visual examples!)
 
+[Regexr](https://regexr.com) <br> : One of the top sites for creating Regular Expressions (Regex). Each piece of the expression is also explained if you dont know what it does!
+
 ### Scripting Libraries
 
 [ReMapper by Swifter](https://github.com/Swifter1243/ReMapper) <br> : A Typescript library that supports the latest from the Heck Library.
