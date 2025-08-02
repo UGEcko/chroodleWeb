@@ -132,7 +132,7 @@ function setEnvDataParameters(version, env) {
 function OpenEnvUtilityWindow() {
   const params = new URLSearchParams(parameters);
 
-  const base = window.location.origin + "/chroodleWeb/userUtils/envDataViewer/";
+  const base = window.location.origin + "/chroodleWeb/userUtils/envDataViewer";
 
   const url = `${base}?${params.toString()}`;
 
