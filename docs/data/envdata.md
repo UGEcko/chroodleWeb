@@ -21,11 +21,24 @@
     transform: scale(1.005)
 }
 
+
+.action-link {
+  display: none;
+  margin-bottom: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+.action-link:hover {
+    transform: scale(1.005)
+}
+
+
+
 #copy-status {
   padding: 0.5em 1em;
   border-radius: 6px;
   color:rgb(141, 146, 255);
-  display: inline-block;
+  display: none;
 }
 </style>
 
@@ -34,193 +47,194 @@ A directory housing extensive BeatSaber Environment information
 ## Select your environment
 
 1. Select your version of BeatSaber
-2. Click on the environment you are using to download the JSON file (Alphabetical)
+2. Click on the desired environment to download the JSON file, or view it in here
 
 === "1.34.2"
-
+    !!! warning
+        1.34.2 is not updated to the latest schema of Environment Data. Environment Titles/IDs are not in this version, as well as some component data.
     <div class="copy-list">
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'RollingStones'); return false;">RollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.34.2_old', 'Weave'); return false;">Weave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'BigMirror'); return false;">BigMirror</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Billie'); return false;">Billie</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'BTS'); return false;">BTS</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'CrabRave'); return false;">CrabRave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Default'); return false;">Default</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Dragons'); return false;">Dragons</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Dragons2'); return false;">Dragons2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'EDM'); return false;">EDM</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'FitBeat'); return false;">FitBeat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Gaga'); return false;">Gaga</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'GreenDay'); return false;">GreenDay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Halloween'); return false;">Halloween</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Interscope'); return false;">Interscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'KDA'); return false;">KDA</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Kaleidoscope'); return false;">Kaleidoscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Lattice'); return false;">Lattice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'LinkinPark'); return false;">LinkinPark</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'LinkinPark2'); return false;">LinkinPark2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Lizzo'); return false;">Lizzo</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Monstercat'); return false;">Monstercat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Nice'); return false;">Nice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Origins'); return false;">Origins</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Panic'); return false;">Panic</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Panic2'); return false;">Panic2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Pyro'); return false;">Pyro</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Queen'); return false;">Queen</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'RockMixtape'); return false;">RockMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Rocket'); return false;">Rocket</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Skrillex'); return false;">Skrillex</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'TheRollingStones'); return false;">TheRollingStones</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'TheSecond'); return false;">TheSecond</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'TheWeeknd'); return false;">TheWeeknd</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Timbaland'); return false;">Timbaland</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Triangle'); return false;">Triangle</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2_old', 'Weave'); return false;">Weave</a>
 
     </div>
 
 === "1.37.1"
 
     <div class="copy-list">
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'HipHop'); return false;">HipHopMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'RollingStones'); return false;">RollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.37.1', 'Weave'); return false;">Weave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'BigMirror'); return false;">BigMirror</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Billie'); return false;">Billie</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'BTS'); return false;">BTS</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Collider'); return false;">Collider</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'CrabRave'); return false;">CrabRave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'DaftPunk'); return false;">DaftPunk</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Default'); return false;">Default</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Dragons'); return false;">Dragons</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Dragons2'); return false;">Dragons2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'EDM'); return false;">EDM</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'FitBeat'); return false;">FitBeat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Gaga'); return false;">Gaga</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'GreenDay'); return false;">GreenDay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Halloween'); return false;">Halloween</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'HipHop'); return false;">HipHopMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Interscope'); return false;">Interscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'KDA'); return false;">KDA</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Lattice'); return false;">Lattice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'LinkinPark'); return false;">LinkinPark</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'LinkinPark2'); return false;">LinkinPark2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Lizzo'); return false;">Lizzo</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Monstercat'); return false;">Monstercat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Nice'); return false;">Nice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Origins'); return false;">Origins</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Panic'); return false;">Panic</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Panic2'); return false;">Panic2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Pyro'); return false;">Pyro</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Queen'); return false;">Queen</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Rocket'); return false;">Rocket</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'RockMixtape'); return false;">RockMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Skrillex'); return false;">Skrillex</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheRollingStones'); return false;">TheRollingStones</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheSecond'); return false;">TheSecond</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheWeeknd'); return false;">TheWeeknd</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Timbaland'); return false;">Timbaland</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Triangle'); return false;">Triangle</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Weave'); return false;">Weave</a>
 
     </div>
 
 === "1.39.1"
     
     <div class="copy-list">
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Britney'); return false;">Britney</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'HipHop'); return false;">HipHop</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Monstercat2'); return false;">Monstercat2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'RollingStones'); return false;">RollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.39.1', 'Weave'); return false;">Weave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'BigMirror'); return false;">BigMirror</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Billie'); return false;">Billie</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Britney'); return false;">Britney</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'BTS'); return false;">BTS</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Collider'); return false;">Collider</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'CrabRave'); return false;">CrabRave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'DaftPunk'); return false;">DaftPunk</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Default'); return false;">Default</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Dragons'); return false;">Dragons</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Dragons2'); return false;">Dragons2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'EDM'); return false;">EDM</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'FitBeat'); return false;">FitBeat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Gaga'); return false;">Gaga</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'GreenDay'); return false;">GreenDay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Halloween'); return false;">Halloween</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'HipHop'); return false;">HipHopMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Interscope'); return false;">Interscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'KDA'); return false;">KDA</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Lattice'); return false;">Lattice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'LinkinPark'); return false;">LinkinPark</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'LinkinPark2'); return false;">LinkinPark2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Lizzo'); return false;">Lizzo</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Monstercat'); return false;">Monstercat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Monstercat2'); return false;">Monstercat2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Nice'); return false;">Nice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Origins'); return false;">Origins</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Panic'); return false;">Panic</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Panic2'); return false;">Panic2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Pyro'); return false;">Pyro</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Queen'); return false;">Queen</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Rocket'); return false;">Rocket</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'RockMixtape'); return false;">RockMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Skrillex'); return false;">Skrillex</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheRollingStones'); return false;">TheRollingStones</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheSecond'); return false;">TheSecond</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheWeeknd'); return false;">TheWeeknd</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Timbaland'); return false;">Timbaland</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Triangle'); return false;">Triangle</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Weave'); return false;">Weave</a>
 
     </div>
 
 === "1.40.0"
 
     <div class="copy-list">
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Britney'); return false;">Britney</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'HipHop'); return false;">HipHopMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Metallica'); return false;">Metallica</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Monstercat2'); return false;">Monstercat2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'TheRollingStones'); return false;">RollingStones</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="downloadFromGithub('1.40.0', 'Weave'); return false;">Weave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'BigMirror'); return false;">BigMirror</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Billie'); return false;">Billie</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Britney'); return false;">Britney</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'BTS'); return false;">BTS</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Collider'); return false;">Collider</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'CrabRave'); return false;">CrabRave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'DaftPunk'); return false;">DaftPunk</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Default'); return false;">Default</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Dragons'); return false;">Dragons</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Dragons2'); return false;">Dragons2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'EDM'); return false;">EDM</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'FitBeat'); return false;">FitBeat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Gaga'); return false;">Gaga</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'GreenDay'); return false;">GreenDay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Halloween'); return false;">Halloween</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'HipHop'); return false;">HipHopMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Interscope'); return false;">Interscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Kaleidoscope'); return false;">Kaleidoscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'KDA'); return false;">KDA</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Lattice'); return false;">Lattice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'LinkinPark'); return false;">LinkinPark</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'LinkinPark2'); return false;">LinkinPark2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Lizzo'); return false;">Lizzo</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Metallica'); return false;">Metallica</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Monstercat'); return false;">Monstercat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Monstercat2'); return false;">Monstercat2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Nice'); return false;">Nice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Origins'); return false;">Origins</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Panic'); return false;">Panic</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Panic2'); return false;">Panic2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Pyro'); return false;">Pyro</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Queen'); return false;">Queen</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'RockMixtape'); return false;">RockMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Rocket'); return false;">Rocket</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Skrillex'); return false;">Skrillex</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheRollingStones'); return false;">RollingStones</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheSecond'); return false;">TheSecond</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheWeeknd'); return false;">TheWeeknd</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Timbaland'); return false;">Timbaland</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Triangle'); return false;">Triangle</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Weave'); return false;">Weave</a>
+      
     </div>
 
-<div id="copy-status">No file downloaded yet.</div>
+<a class="action-link" id="dlEnvData" href="#" onclick="downloadFromGithub(); return false;">Download EnvData</a>
+
+<a class="action-link" id="viewEnvData" href="#" onclick="OpenEnvUtilityWindow(); return false;">View EnvData</a>
 
 <hr>
 
