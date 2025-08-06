@@ -464,8 +464,8 @@ Lets call this one "Potentially-Asked-Questions" because this like just came pub
 ??? info "Which versions of BeatSaber are sampled?"
     The following versions are currently sampled:
 
-    - 1.29.1 (Coming soon)
-    - 1.34.2 (Legacy)
+    - 1.29.1
+    - 1.34.2
     - 1.37.1
     - 1.39.1
     - 1.40.0
