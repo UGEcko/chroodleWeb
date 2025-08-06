@@ -331,9 +331,6 @@ A directory housing extensive BeatSaber Environment information
     * **MeshCollider**
     * * meshBoundsCenter
     * * meshBoundsSize
-    * **CloudsMeshGenerator (1.37.1+ Only)**
-    * * cloudsBoundSize
-    * * cloudsBoundCenter
     * **CustomBoundingBox**
     * * customBoundCenter
     * * customBoundSize
@@ -397,6 +394,7 @@ A directory housing extensive BeatSaber Environment information
     * SpectrogramRow
     * VideoPlayer
     * TransformLayouter
+    * CloudsMeshGenerator
 <hr>
 
 ## PAQ
