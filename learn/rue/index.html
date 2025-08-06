@@ -1,0 +1,1361 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ugecko.github.io/chroodleWeb/learn/rue/">
+      
+      
+        <link rel="prev" href="../geometry/">
+      
+      
+        <link rel="next" href="../../data/clogs/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Runtime Unity Editor - Chroodle</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fauna+One:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fauna One";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#runtime-unity-editor-rue" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Chroodle" class="md-header__button md-logo" aria-label="Chroodle" data-md-component="logo">
+      
+  <img src="../../assets/chroodle.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chroodle
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Runtime Unity Editor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Chroodle" class="md-nav__button md-logo" aria-label="Chroodle" data-md-component="logo">
+      
+  <img src="../../assets/chroodle.png" alt="logo">
+
+    </a>
+    Chroodle
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Learn
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Learn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../envs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Environments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Geometry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Runtime Unity Editor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Runtime Unity Editor
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Browser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-browser-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Browser Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟨 – Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩 – Object List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟥 – Transform Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟦 – Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspector
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspector-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspector Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟥 – Filters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs-member-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩 – Tabs &amp; Member List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟧 – Property View
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/clogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chroma Logs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/envdata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/reftable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reference Tables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Useful Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Other
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Other
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/etroubleshoot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribute
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Browser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Browser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-browser-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Browser Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟨 – Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩 – Object List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟥 – Transform Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟦 – Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspector
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspector-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspector Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟥 – Filters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs-member-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩 – Tabs &amp; Member List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟧 – Property View
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="runtime-unity-editor-rue">Runtime Unity Editor (RUE)</h1>
+<div class="admonition info">
+<p class="admonition-title">RUE Description</p>
+<p>Runtime Unity Editor is an In-game inspector, editor and interactive console for applications made with Unity3D game engine. It's designed for debugging and modding Unity games, but can also be used as a universal trainer.</p>
+</div>
+<p>When applied to BeatSaber; RUE can be used to interact with objects in loaded scenes. <br> Not only can this be helpful for modders, but it can also benefit environment artists, providing an easy way to find specific objects and inspect them.</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><strong>Looking for something more modern?</strong></p>
+<p>If you're looking for a <strong>more modern tool</strong>, check out <a href="https://cdn.discordapp.com/attachments/864240224400572467/1314041476807655475/UnityExplorer.zip?ex=6867d7bd&amp;is=6866863d&amp;hm=207f333cea3538d20afd2b8275f5dce3a3144aa225c06a293029eca27138e2d9&amp;"><strong>Unity Explorer</strong></a> (Ported to BSIPA..  Originally Developed by Sinai.)</p>
+<p>Specifically for BeatSaber, Unity Explorer offers a more intuitive UI all over, and allows you to navigate scenes more efficiently.</p>
+<blockquote>
+<p>RUE is still useful and works well with Beat Saber, especially if you're using mods like Chroma or Noodle.</p>
+<p>This guide focuses on <strong>Runtime Unity Editor (RUE)</strong> for those sticking with that workflow, however both aren't much different.</p>
+</blockquote>
+</div>
+<hr />
+<h3 id="features-covered">Features Covered</h3>
+<ul>
+<li>Modifying GameObject transform  </li>
+<li>Destroying / Changing activity of GameObjects  </li>
+<li>Inspecting / Modifying components of GameObjects  </li>
+</ul>
+<blockquote>
+<p>RUE is made up of <strong>modules</strong>.<br />
+For this page, we will only be covering the <code>Object Browser</code> and <code>Inspector</code> modules, along with small/extra features.</p>
+<p><strong>PSA:</strong> This repo was specifically made with Chroma and Noodle in mind, so not <em>all</em> features that RUE offers will be covered—just in-depth explanations of the most helpful features.</p>
+</blockquote>
+<hr />
+<h2 id="installation">Installation</h2>
+<blockquote>
+<p><strong>Note:</strong> While you can refer to the <a href="https://github.com/ManlyMarco/RuntimeUnityEditor">Official repo</a> for further documentation, you cannot install the repo version as it’s designed for other mod loaders like MelonLoader. We use a modified version of IPA for BeatSaber (BSIPA).</p>
+</blockquote>
+<p>The installation process of RUE is the same as a typical BeatSaber plugin:</p>
+<ol>
+<li>Download the RUE <code>.zip</code> file from the <a href="https://discord.com/channels/441805394323439646/443146108420620318/1234067170040741938">BSMG Discord <code>pc-mod-dev</code> channel</a>, or click <a href="https://cdn.discordapp.com/attachments/443146108420620318/1234067169726435358/RUE.zip?ex=6878135d&amp;is=6876c1dd&amp;hm=fc01b0efcfaba9b33a29c90cce391af41b2c266a40a69974160c44e1ea8ac049&amp;">here</a> to directly download.</li>
+<li>Open the zip, and drag both <code>Libs</code> and <code>Plugins</code> folders into your BeatSaber root folder.</li>
+<li>Done! Launch BeatSaber and move on to the <strong>Navigation</strong> section below.</li>
+</ol>
+<hr />
+<h2 id="navigation">Navigation</h2>
+<p>To open RUE, press the <code>G</code> key in-game. This opens the RUE UI (it may have some tabs already open).</p>
+<p>Focus on the bottom UI area — this displays all the available RUE modules. Toward the right are additional toggles and tools.</p>
+<p>We’ll start with <strong>Time</strong>, then cover the key modules.</p>
+<hr />
+<h2 id="time">Time</h2>
+<p><code>Time</code> allows you to manipulate the Unity scene's timescale.</p>
+<ul>
+<li>Higher values = <strong>faster</strong> animations and movement  </li>
+<li>Lower values = <strong>slower</strong> animations and movement  </li>
+</ul>
+<p>Two buttons are included:<br />
+- <code>&gt;</code> resets time to <code>1.00</code><br />
+- ⏸️ Sets time to <code>0</code> (pauses time) — press <code>&gt;</code> to unpause</p>
+<blockquote>
+<p><strong>Note:</strong> <code>Time</code> does <em>not</em> affect the speed of songs/maps.</p>
+</blockquote>
+<hr />
+<h2 id="modules">Modules</h2>
+<p>RUE includes several modules: Clipboard, Inspector, Object Browser, Profile, REPL Console, Viewer.</p>
+<p>We’ll only cover the <strong><a href="./#object-browser">Object Browser</a></strong> and the <strong><a href="./#inspector">Inspector</a></strong>.</p>
+<hr />
+<h2 id="object-browser">Object Browser</h2>
+<ul>
+<li>Lists <strong>all</strong> GameObjects in the scene  </li>
+<li>Allows editing of transform properties (Position, Scale, Rotation, etc.)  </li>
+<li>Lists all components tied to that object, allowing you to edit their properties in the Inspector.</li>
+</ul>
+<h3 id="object-browser-anatomy">Object Browser Anatomy</h3>
+<blockquote>
+<p>Click on each colored section to learn about it!</p>
+</blockquote>
+<p><img src="https://github.com/user-attachments/assets/905f109f-026c-4366-b267-f9e0e916b54a" usemap="#objbr-map"></p>
+<map name="objbr-map">
+    <area target="" alt="Search Options" title="Search Options" href="#search" coords="2,12,302,60" shape="rect">
+    <area target="" alt="Object List" title="Object List" href="#object-list" coords="2,58,302,365" shape="rect">
+    <area target="" alt="Transform Properties" title="Transform Properties" href="#transform-properties" coords="1,364,302,541" shape="rect">
+    <area target="" alt="Component List" title="Component List" href="#components" coords="0,542,302,887" shape="rect">
+</map>
+
+<hr />
+<h3 id="search">🟨 – Search</h3>
+<ul>
+<li>Where you are able to search and filter through the GameObject list</li>
+<li>Filter Options:<ul>
+<li><strong>Names</strong> (Search by object name, default filter)</li>
+<li><strong>Components</strong> (Search by specific component type)  </li>
+<li>Properties and Statics <em>(not relevant)</em></li>
+</ul>
+</li>
+<li><code>Clear</code> — Clear search filter</li>
+<li><code>Dump Obj</code> — Not relevant</li>
+</ul>
+<hr />
+<h3 id="object-list">🟩 – Object List</h3>
+<ul>
+<li>Lists all GameObjects</li>
+<li>Click to select an object</li>
+<li>Grey boxes indicate an expandable parent object</li>
+<li>Greyed-out objects indicate the object is inactive</li>
+<li>Selected objects are highlighted blue</li>
+<li>Right click to open the context menu, pretty much the transform properties</li>
+</ul>
+<hr />
+<h3 id="transform-properties">🟥 – Transform Properties</h3>
+<p>Shows transform properties of the selected GameObject:</p>
+<ul>
+<li>Toggle object active/inactive</li>
+<li>Transform Control<ul>
+<li>Position, LocalPosition</li>
+<li>Scale (LossyScale, LocalScale)</li>
+<li>Rotation (EulerAngles, LocalEulerAngles)  </li>
+</ul>
+</li>
+<li><code>Inspect</code> button — sends object to Inspector  </li>
+<li>❌ — destroys the GameObject  </li>
+</ul>
+<blockquote>
+<p>LossyScale (Read-only) - Accumulated scale of an object to the hierarchy
+LocalScale: Scale of the object relative to it's parent (USE THIS)</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>For RUE Users</strong>: Some transform sliders like rotation will behave in a strange way. <br>If this is an issue for you, I'd recommend using Unity Explorer.</p>
+</div>
+<hr />
+<h3 id="components">🟦 – Components</h3>
+<ul>
+<li>Lists all components on the selected GameObject</li>
+<li>Click a component to open it in the <strong>Inspector</strong></li>
+<li>Click the grey box to enable/disable the component</li>
+<li>Includes a search filter like the main search bar</li>
+</ul>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">NOTICE</p>
+<p>Environment Objects (including the player) use the normal unity transform units of 1 meter. <br> However, Gameplay objects (notes, bombs, etc..) use <strong>Noodle Units</strong> which is 0.6 meters for the convenience of making notemods. Learn more about this on the <a href="../../data/reftable/#unity-units-noodle-units">conversion ratios page</a>.</p>
+</div>
+<h2 id="inspector">Inspector</h2>
+<p>Used to <strong>inspect and modify</strong> GameObjects or their components.</p>
+<p>Component properies like attenuation on the BloomFogEnvironment component can be changed here!</p>
+<h3 id="inspector-anatomy">Inspector Anatomy</h3>
+<blockquote>
+<p>Click on each colored section to learn about it!</p>
+</blockquote>
+<p><img src="https://github.com/user-attachments/assets/cc93e8e0-1d6d-4906-a689-a1e1fc203d2c" usemap="#inspector-map"></p>
+<map name="inspector-map">
+    <area target="" alt="Search filters" title="Search filters" href="#filters" coords="4,16,569,40" shape="rect">
+    <area target="" alt="Tabs and member lists" title="Tabs and member lists" href="#tabs-member-list" coords="4,44,746,91" shape="rect">
+    <area target="" alt="Properties view" title="Properties view" href="#property-view" coords="4,96,746,663" shape="rect">
+</map>
+
+<hr />
+<h3 id="filters">🟥 – Filters</h3>
+<ul>
+<li>Textbox + checkboxes  </li>
+<li><code>Only Declared</code> — filters out likely useless properties  </li>
+<li><code>Fields</code> — may be relevant (example shown below)</li>
+</ul>
+<hr />
+<h3 id="tabs-member-list">🟩 – Tabs &amp; Member List</h3>
+<ul>
+<li>Tabs represent selected GameObjects/components  </li>
+<li>Member list shows deeper inspected objects  </li>
+<li>Tabs = parent  </li>
+<li>Members = children  </li>
+<li>Selected tabs/members = blue  </li>
+<li>Use tabs to organize multiple inspections</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have an overwhelming amount of tabs, click the "Close all tabs" button located in the top right of the inspector to clear the list.</p>
+</div>
+<hr />
+<h3 id="property-view">🟧 – Property View</h3>
+<p>Where all modifications are made:</p>
+<ul>
+<li><strong>Value/Return Type</strong> — Type of property  </li>
+<li><strong>Member Name</strong> — Name of the property  </li>
+<li><strong>Value</strong> — Current value that you can modify</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">active</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Appears in the inspector as:s</p>
+<ul>
+<li>Type: <code>System.Boolean</code></li>
+<li>Member Name: <code>active</code></li>
+<li>Value: <code>true</code></li>
+</ul>
+</div>
+<p><br></p>
+<p>Fields can appear as buttons (sub-class) — click to inspect deeper.</p>
+<p>Example of a useful field: <code>_fogParams</code>, which controlls the fog.</p>
+<div class="admonition example">
+<p class="admonition-title">Example for _fogParams</p>
+<p><div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">BloomFogEnvironmentParams</span><span class="w"> </span><span class="n">_fogParams</span><span class="p">;</span>
+</span></code></pre></div>
+OR</p>
+<ul>
+<li>Type: <code>BloomFogEnvironmentParams</code></li>
+<li>Member Name: <code>_fogParams</code></li>
+</ul>
+</div>
+<p>Modifying the fog in game is a great way to get a feel for finding specific objects in different ways, and modifying component properties. Watch a video on how to do this with RUE <a href="https://streamable.com/94gohd">here</a>.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Here are some examples to get you going with RUE. <br> I recommend to follow along in-game to get the hang of it! </p>
+<blockquote>
+<p>Since there is dialogue missing from the videos, there are some explanations to some things you may have questions about. <br> Just click on the title of the card to see the video and expand it for explanations.</p>
+<p>I used "spells" published by Swifter as the map for the examples, check it out <a href="https://beatsaver.com/maps/35a0b">here</a>!</p>
+</blockquote>
+<details class="info">
+<summary><a href="https://streamable.com/94gohd">Find and modify the fog in a map (Component searching)</a></summary>
+<p>To change fog in BeatSaber, you must modify the parameters in the <code>BloomFogEnvironment</code> component. (Chroma taps into this component when you wish to change the fog on your map.)</p>
+<p>Because there is only one BloomFogEnvironment component in the scene, we can search for it using the Component filter.</p>
+<blockquote>
+<p>We <em>could</em> use "environment" as the search since its the parent object name, but component searching is more concrete, and sometimes quicker.</p>
+</blockquote>
+</details>
+<details class="info">
+<summary><a href="https://streamable.com/m82zjh">Find and modify lasers (Component searching)</a></summary>
+<p>Lasers in BeatSaber have the <code>TubeBloomPrePassLight</code> component on them – This is to control their visual behavior. <br>
+If you have ever modified a laser, or even a geometry light you may have heard of this component to modify specific properties like <code>colorAlphaMultiplier</code> and <code>bloomFogIntensityMultiplier</code>.</p>
+<p>Because there are a ton of lights in this map, it takes some time to find the laser but not long.</p>
+</details>
+<hr />
+<p>That about covers the installation and basics for RUE!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../geometry/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Geometry">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Geometry
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../data/clogs/" class="md-footer__link md-footer__link--next" aria-label="Next: Chroma Logs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chroma Logs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      ❤️ Handcrafted with love by the BeatSaber community ❤️
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.select", "navigation.sections", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>
