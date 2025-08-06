@@ -263,9 +263,7 @@
       <a class="copy-link" href="#" onclick="copyChromaGit(this, '1.40.0', 'Weave'); return false;">Weave</a>
 
     </div>
-
-<div id="copy-status">No file copied yet.</div>
-
+    
 
 <hr>
 
