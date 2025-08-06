@@ -158,8 +158,3 @@
 <div id="env-d-fogParams"><b>Environment Default Fog Parameters</b></div>
 
 </div>
-
-
-<footer>
-Note: 1.34.2 environments are NOT fully compatible with this page yet.
-</footer>
