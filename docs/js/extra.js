@@ -11,7 +11,8 @@ function copyChromaGit(el, version, environment) {
       .then(response => response.text())
       .then(text => {
         navigator.clipboard.writeText(text).then(() => {
-          document.getElementById('copy-status').textContent = "Latest copy: Chroma Log for " +  env + " on Version " + version;
+          document.getElementById('copy-status').textContent = "Copied Chroma Log for '" +  environment + "' on Version " + version;
+          console.log("Ee")
         });
 
         el.classList.remove('beat');
@@ -120,7 +121,7 @@ function setEnvDataParameters(version, env) {
   const view = document.getElementById('viewEnvData');
   dl.textContent = `Download ${env} Environment Data`
   dl.style.display = "block";
-  view.textContent = `View ${env} Environment Data`
+  view.textContent = `View ${env} Environment Data (Info only)`
   view.style.display = "block";
 }
 

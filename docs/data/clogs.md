@@ -43,6 +43,7 @@
 
 1. Select your version of BeatSaber
 2. Click on the environment you are using to copy the log to your clipboard. (Alphabetical)
+3. Paste into an editor like [regexr](https://regexr.com)!
 
 === "1.29.1"
 
@@ -263,6 +264,8 @@
       <a class="copy-link" href="#" onclick="copyChromaGit(this, '1.40.0', 'Weave'); return false;">Weave</a>
 
     </div>
+
+<div id="copy-status"></div>
     
 
 <hr>
