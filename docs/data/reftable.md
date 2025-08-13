@@ -1,6 +1,6 @@
 # Reference Tables
 
-A page for stuff to reference/glance at.
+A page to reference various 
 
 ## Geometry Reference Table
 
@@ -19,9 +19,9 @@ A page for stuff to reference/glance at.
 
 <hr>
 
-## Conversion Ratios Table
+## Conversion Ratios
 
-### Unity Units <=> Noodle Units
+### Unity Units to Noodle Units
 
 1 meter (Unity Unit) => 0.6 meters (Noodle Unit)
 
