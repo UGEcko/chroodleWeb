@@ -13,26 +13,8 @@ If an error you are experiencing isnt covered here, feel free to reach out for s
 
 <hr>
 
-## Heck 
+## Heck
 
-??? failure "example error"
-    <hr>
-
-    > **Log Snippet**
-
-    ```
-    example snippet
-    ```
-
-    > **Explanation**
-
-    *Example Explanation*
-
-    > **Solution**
-
-    *Example Solution*
-
-    <hr>
 
 ## ReMapper
 
