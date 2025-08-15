@@ -447,8 +447,8 @@ Lets call this one "Potentially-Asked-Questions" because this like just came pub
                 "Transform": {
                   "position": [float,float,float],
                   "localPosition": [float,float,float],
-                  "rotation": [float,float,float],
-                  "localRotation": [float,float,float],
+                  "rotation": [float,float,float], // Euler Angles
+                  "localRotation": [float,float,float], // Euler Angles
                   "scale": [float,float,float]
                 },
                 "OtherComponent": {}
