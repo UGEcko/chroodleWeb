@@ -84,6 +84,8 @@ To organize and future proof, links will be organized in categories, some being 
 
 [Video Compressor](https://8mb.video/) <br> : Simple video compressor, specify the file size aswell!
 
+[Perlin Noise Generator Website](https://htmlpreview.github.io/?https://github.com/blackears/PerlinNoiseMaker/blob/master/index.html) <br> : Simple site that allows you to quickly generate and download perlin noise textures.
+
 <hr>
 
 ## Everything Vivify
@@ -123,6 +125,8 @@ To organize and future proof, links will be organized in categories, some being 
 
 [Global Variables for BeatSaber Shaders (1.29.1)](https://pastebin.com/XKmuwJZz) <br> : All Global Variables for shaders found on BeatSaber shaders on 1.29.1
 
+[Shader "Did you knows" by Owen](https://github.com/OwenTheProgrammer/The-Shader-Grimoire/blob/main/DidYouKnow/README.md) <br> : A great source of niche (unity) shader information. (Recommended to bookmark if you are a beginner especially!)
+
 ### Assets
 
 [Noise Pack (Free)](https://opengameart.org/content/noise-texture-pack) <br> : Its a free pack of noise textures cmon
@@ -135,6 +139,8 @@ To organize and future proof, links will be organized in categories, some being 
 [CurveMaster (30$)](https://assetstore.unity.com/packages/tools/animation/curve-master-252505) <br> : A tool for tuning your animation curves in Unity.
 
 [Better UnityAnimationWindow (Audio Waveforms!)](https://github.com/swifter1243/UnityAnimationWindow) <br> : Add your song to the animation window as a waveform WITH beat markers!
+
+[Chrunity](https://github.com/UGEcko/Chrunity) <br> : A tool that allows you to place Chroma "Geometry" objects in Unity and port it into your map.
 
 <hr>
 
