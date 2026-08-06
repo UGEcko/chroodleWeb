@@ -327,7 +327,7 @@ Lets call this one "Potentially-Asked-Questions" because this just came public..
               "eventTracks": {},
               "groupPages": {}
             },
-            "uniqueMaterials": [
+            "uniqueMaterials": [ // Every material that is found in the environment
               {
                 "hash": "",
                 "name": "",
@@ -337,7 +337,7 @@ Lets call this one "Potentially-Asked-Questions" because this just came public..
                 "shaderProperties": {} // Every shader property value specific to the material
               }
             ],
-            "uniqueMeshes": [
+            "uniqueMeshes": [ // Every mesh that is found in the environment
               {
                 "name": "",
                 "hash": "",
@@ -346,7 +346,7 @@ Lets call this one "Potentially-Asked-Questions" because this just came public..
               }
             ]
           },
-          "objects": [
+          "objects": [ // Every GameObject in the environment is listed here
             {
               "name": "GameObject Name",
               "id": "ChromaID",
