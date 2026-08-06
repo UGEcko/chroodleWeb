@@ -54,13 +54,13 @@ nav:
     - Environment Data : data/envdata.md
     - Reference Tables : data/reftable.md
     - Useful Links: data/links.md
-  - Other:
-    - Error Troubleshooting : other/etroubleshoot.md
-    - Contribute : other/contribute.md 
+
+  - == Contribute == : contribute.md 
 
 extra_javascript:
   - js/extra.js
 extra_css:
   - stylesheets/extra.css
 
-copyright: ❤️ Handcrafted with love by the BeatSaber community ❤️
+
+copyright: ❤️ Crafted with love by the BeatSaber community ❤️
