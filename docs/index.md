@@ -25,11 +25,4 @@ Here is what Chroodle has to offer. Below you can be redirected to learn, view d
 [Useful Links](data/links.md) <br> : A dump of links. Thats it. Just bookmark it already.. okay?
 <hr>
 
-## Other
-[Error Troubleshooting](other/etroubleshoot.md) <br> : A problem -> solution page for those encountering commonly found issues in select-environments
-
-[Contribute](other/contribute.md) <br> : Interested in contributing to Chroodle? Check this page out!
-
-<hr>
-
-> Want to suggest a change or make an addition? **Contact ugecko on Discord.**
+> Want to suggest a change or make an addition? Visit the [Contribution page](contribute.md)!
