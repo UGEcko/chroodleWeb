@@ -44,227 +44,62 @@
 
 # Environment Data
 A directory housing extensive BeatSaber Environment information
+
 ## Select your environment
 
-1. Select your version of BeatSaber
-2. Click on the desired environment to download the JSON file, or view it in here
+First, click on your desired environment from the list. <br>Then, download the file or view basic environment information below the list.
 
 
-=== "1.29.1"
-    <div class="copy-list">
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.29.1', 'Weave'); return false;">Weave</a>
+> NOTE: 1.43.0 is the only sampled version for EnvData.
 
-    </div>
-
-=== "1.34.2"
-    <div class="copy-list">
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.34.2', 'Weave'); return false;">Weave</a>
-
-    </div>
-
-=== "1.37.1"
-
-    <div class="copy-list">
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'HipHop'); return false;">HipHopMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.37.1', 'Weave'); return false;">Weave</a>
-
-    </div>
-
-=== "1.39.1"
-    
-    <div class="copy-list">
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Britney'); return false;">Britney</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'HipHop'); return false;">HipHopMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Monstercat2'); return false;">Monstercat2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheRollingStones'); return false;">TheRollingStones</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.39.1', 'Weave'); return false;">Weave</a>
-
-    </div>
-
-=== "1.40.0"
-
-    <div class="copy-list">
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'BigMirror'); return false;">BigMirror</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Billie'); return false;">Billie</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Britney'); return false;">Britney</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'BTS'); return false;">BTS</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Collider'); return false;">Collider</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'CrabRave'); return false;">CrabRave</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'DaftPunk'); return false;">DaftPunk</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Default'); return false;">Default</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Dragons'); return false;">Dragons</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Dragons2'); return false;">Dragons2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'EDM'); return false;">EDM</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'FitBeat'); return false;">FitBeat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Gaga'); return false;">Gaga</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'GreenDay'); return false;">GreenDay</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Halloween'); return false;">Halloween</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'HipHop'); return false;">HipHopMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Interscope'); return false;">Interscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Kaleidoscope'); return false;">Kaleidoscope</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'KDA'); return false;">KDA</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Lattice'); return false;">Lattice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'LinkinPark'); return false;">LinkinPark</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'LinkinPark2'); return false;">LinkinPark2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Lizzo'); return false;">Lizzo</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Metallica'); return false;">Metallica</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Monstercat'); return false;">Monstercat</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Monstercat2'); return false;">Monstercat2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Nice'); return false;">Nice</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Origins'); return false;">Origins</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Panic'); return false;">Panic</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Panic2'); return false;">Panic2</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Pyro'); return false;">Pyro</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Queen'); return false;">Queen</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'RockMixtape'); return false;">RockMixtape</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Rocket'); return false;">Rocket</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Skrillex'); return false;">Skrillex</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheRollingStones'); return false;">RollingStones</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheSecond'); return false;">TheSecond</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'TheWeeknd'); return false;">TheWeeknd</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Timbaland'); return false;">Timbaland</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Triangle'); return false;">Triangle</a>
-      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.40.0', 'Weave'); return false;">Weave</a>
+<div class="copy-list">
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'BTS'); return false;">BTS</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'BigMirror'); return false;">BigMirror</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Billie'); return false;">Billie</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Britney'); return false;">Britney</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Coldplay'); return false;">Coldplay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Collider'); return false;">Collider</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'CrabRave'); return false;">CrabRave</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'DaftPunk'); return false;">DaftPunk</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Default'); return false;">TheFirst (Default)</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Dragons2'); return false;">Dragons2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Dragons'); return false;">Dragons</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'EDM'); return false;">EDM</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'FitBeat'); return false;">FitBeat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Gaga'); return false;">Gaga</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'GlassDesert'); return false;">GlassDesert</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'GreenDay'); return false;">GreenDay</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'GreenDayGrenade'); return false;">GreenDayGrenade</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Grid'); return false;">Cube (Grid)</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Halloween'); return false;">Halloween</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Halloween2'); return false;">Halloween2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'HipHop'); return false;">HipHopMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Interscope'); return false;">Interscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'KDA'); return false;">KDA</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Kaleidoscope'); return false;">Kaleidoscope</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Lattice'); return false;">Lattice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'LinkinPark'); return false;">LinkinPark</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'LinkinPark2'); return false;">LinkinPark2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Lizzo'); return false;">Lizzo</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Metallica'); return false;">Metallica</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Monstercat'); return false;">Monstercat</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Monstercat2'); return false;">Monstercat2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Nice'); return false;">Nice</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Origins'); return false;">Origins</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Panic'); return false;">Panic</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Panic2'); return false;">Panic2</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Prodigy'); return false;">Prodigy</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Pyro'); return false;">Pyro</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Queen'); return false;">Queen</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'RockMixtape'); return false;">RockMixtape</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Rocket'); return false;">Rocket</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Skrillex'); return false;">Skrillex</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'TheRollingStones'); return false;">RollingStones</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'TheSecond'); return false;">TheSecond</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'TheWeeknd'); return false;">TheWeeknd</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Timbaland'); return false;">Timbaland</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Triangle'); return false;">Triangle</a>
+      <a class="copy-link" href="#" onclick="setEnvDataParameters('1.43.0', 'Weave'); return false;">Weave</a>
       
     </div>
 
@@ -275,180 +110,254 @@ A directory housing extensive BeatSaber Environment information
 <hr>
 
 ??? info "Supported Components"
-    99% of components will have a `Transform` component, but some may have more to help out with specific cases.
+    Most objects will contain a Transform component.
 
-    **The following components will be listed with selected properties:**
-    
-    * **Transform**
-    * * position
-    * * localPosition
-    * * rotation
-    * * localRotation
-    * * localScale
-    * **TrackLaneRingsManager**
-    * * ringCount
-    * * ringPositionZStep
-    * **MeshFilter**
-    * * boundCenter
-    * * boundSize
-    * **TubeBloomPrePassLight**
-    * * colorAlphaMultiplier
-    * * bloomFogIntensityMultiplier
-    * * length
-    * * width
-    * **TubeBloomPrePassLightWithId**
-    * * tubeLightId
-    * **DirectionalLightWithId**
-    * * lightId
-    * **Animator**
-    * * animatorParameters
-    * * animatorLayerNames
-    * **LightManager**
-    * * directionalLightDirections
-    * * directionalLightPositions
-    * **DirectionalLight**
-    * * lightIntensity
-    * * lightRadius
-    * * lightRotation
-    * **BakedReflectionProbe**
-    * * probeSize
-    * * probePosition
-    * **SpriteLightWithId**
-    * * spriteLightId
-    * * intensity
-    * **RectangleFakeGlow**
-    * * rectangleSize
-    * **RectangleFakeGlowWithLightId**
-    * * rectangleLightId
-    * **EnvironmentBrandingManager**
-    * * brandingObjects
-    * **ParticleSystemWithLightId**
-    * * particleLightId
-    * * particleLightIntensity
-    * **InstancedMaterialLightWithId**
-    * * materialLightId
-    * * materialLightIntensity
-    * **MeshCollider**
-    * * meshBoundsCenter
-    * * meshBoundsSize
-    * **CloudsMeshGenerator (1.37.1+ Only)**
-    * * cloudsBoundSize
-    * * cloudsBoundCenter
-    * **CustomBoundingBox**
-    * * customBoundCenter
-    * * customBoundSize
-    * **Animation**
-    * * clipFrameRate
-    * * clipLength
-    * **SmoothStepPositionEventEffect**
-    * * minY
-    * * maxY
-    * * stepSize
-    * * startPos
-    * * easing
-    * **LightGroupCircularLayouter**
-    * * circularRadius
-    * * circularAngle
-    * * groupId
-    * **SmoothStepPositionGroupEventEffect**
-    * * groupMinY
-    * * groupMaxY
-    * * groupStepSize
-    * * groupStartPos
-    * * groupEasing
+    Please note this is a full list of every single component thats included, you will not need 95% of these.
 
-    **The following components will be listed *without* any properties listed:**
+    ### Unity
 
-    * BloomFogEnvironment
-    * EnvironmentSceneSetup
-    * LightWithIdManager
-    * Canvas
+    * BoxCollider
+    * CapsuleCollider
+    * MeshCollider
+    * SphereCollider
+    * Animation
+    * Animator
+    * ArticulationBody
+    * MeshFilter
+    * MeshRenderer
     * ParticleSystem
-    * Spectrogram
+    * RigidBody
+    * SpringJoint
+    * SpriteRenderer
+    * Transform
+
+    ### Light
+
+    * ColorArrayLightWithIds
+    * DirectionalLightWithId
+    * DirectionalLightWithIds
+    * DirectionalLightWithLightGroupIds
+    * GlobalShaderColorLightWithIds
+    * InstancedMaterialLightWithId
+    * LightmapLightsWithIds
+    * LightmapLightWithIds
+    * MaterialLightWithId
+    * MaterialLightWithIds
+    * ParticleSystemLightWithId
+    * PointLight
+    * PointLightWithIds
+    * RectangleFakeGlowLightWithLightId
+    * SpriteArrayLightWithId
+    * SpriteLightWithId
+    * TubeBloomPrePassLightWithId
+    * LightManager
+    * LightWithIdManager
+    * DirectionalLight
+    * Parametric3SliceSpriteController
+    * ParametricBoxController
+    * RectangleFakeGlow
+    * TubeBloomPrePassLight
+
+    ### BloomFog
+
+    * BloomPrePassBackgroundColorsGradientElementWithLightId
+    * BloomPrePassBackgroundColorsGradientTintColorWithLightId
+    * BloomPrePassBackgroundColorsGradientTintColorWithLightIds
+    * BloomPrePassBackgroundLightWithId
+    * BloomPrePassBackgroundColor
     * BloomPrePassBackgroundColorsGradient
-    * Mirror
-    * SaberBurnMarkArea
-    * TrackLaneRing
+    * BloomPrePassBackgroundColorsGradientFromColorSchemeColors
+    * BloomPrePassBackgroundGradient
+    * BloomPrePassBackgroundNonLightInstancedGroupRenderer
+    * BloomPrePassBackgroundNonLightRenderer
+    * BloomPrePassBackgroundNonLightRendererCore
+    * BloomPrePassBackgroundParticleSystemRenderer
+    * BloomPrePassBackgroundSpriteRenderer
+    * BloomPrePassNonLightPass
+
+    ### Effects
+
+    * FloatFxGroupEffectManager
     * LightColorGroupEffectManager
     * LightRotationGroupEffectManager
-    * LightGroup
-    * LightGroupLinearLayouter
-    * LightRotationGroup
-    * ContinuousFireEffect
+    * LightTranslationGroupEffectManager
+    * TriggerFloatFxGroupEffectManager
+    * TrackLaneRingsPositionStepEffectSpawner
+    * TrackLaneRingsRotationEffectSpawner
     * BurstFireEffect
-    * LightmapLightWithIdsGroupEntry
-    * FloatingTransformEffect
-    * LightTranslationGroup
-    * TransformSpectrogram
-    * ColorArrayLightWithIds
-    * LevelFailedTextOverride
-    * MoveInDirectionEffect
+    * ContinuousFireEffect
+    * FloatFxGroupEffect
+    * HydraulicCarJumpEffect
+    * HydraulicCarSuspensionEffect
+    * LightColorGroupEffect
+    * LightRotationGroupEffect
+    * TrackLaneRingsRotationEffect
+    * TriggerFloatFxGroupEffect
     * TubeBloomPrePassLightCollisionEffect
     * TubeBloomPrePassLightReflectionEffect
-    * MaterialLightWithId
-    * BTSCharacterSpawnController
-    * RigidBody
-    * LightmapLightWithIds
-    * ParticleSystemLightWithIds
+
+
+    ### Event Effects
+
+    * BackgroundTextureGradientSwitchEventEffect
+    * ColliderEventEffect
+    * GameObjectIntSwitchEventEffect
     * GameObjectSwitchEventEffect
-    * FloorLightTilesGrid
+    * LightPairRotationEventEffect
+    * LightPairSinMoveEventEffect
+    * LightSwitchEventEffect
+    * LightRotationEventEffect
+    * MeshRendererSwitchEventEffect
+    * MovementBeatmapEventEffect
+    * ParticleSystemContinuousEventEffect
+    * ParticleSystemEmitEventEffect
+    * ParticleSystemEventEffect
+    * PhysicsPositionsMovementEventEffect
+    * SmoothStepPositionEventEffect
+    * SmoothStepPositionGroupEventEffect
+    * TextureIntSwitchEventEffect
+
+
+    ### Groups
+
+    * AlphaFloatFxGroupEffectTarget
+    * CombineGroupIdToVector4FloatFxGroupEffectTarget
+    * FloatArrayMaterialPropertyEffectTarget
+    * FloatFxGroupEffectCollectionTarget
+    * FloatLocalScaleEffect
+    * FloatMaterialPropertyEffectTarget
+    * FloatSDFPointScaleEffect
+    * FloatTextureProcessor3DMappingFloatEffectTarget
+    * FloatTextureProcessor3DMappingVectorEffectTarget
+    * FloatTextureProcessor3DMaterialSwitchEffectTarget
+    * FloatTextureProcessor3DParameterEffectTarget
+    * FloatTextureProcessor3DPresetEffectTarget
+    * MoveInDirectionEffect
+    * Parametric3SliceSpriteWidthEndFloatFxEffectTarget
+    * SpectrogramMultiplierFloatFxEffectTarget
+    * StepFloatMaterialPropertyEffectTarget
+    * SwitchGameObjectArrayEffectTarget
+    * SwitchGameObjectEffectTarget
+    * VertexDisplacementFloatFxGroupEffectTarget
+    * FloatFxGroup
     * LightColorGroup
-    * LightColorGroupParent
-    * SpectrogramRow
-    * VideoPlayer
-    * TransformLayouter
+    * LightGroupCircularLayouter
+    * LightRotationGroup
+    * LightTranslationGroup
+
+    ### MaterialPropertyBlock
+
+    * MaterialPropertyBlockColorSetter
+    * MaterialPropertyBlockController
+    * MaterialPropertyBlockControllerArrayRandomValueSetter
+    * MaterialPropertyBlockControllerRandomValueSetter
+    * MaterialPropertyBlockPositionUpdater
+    * MaterialPropertyBlockRandomValueSetter
+
+    ### Other
+
+    * BakedLightsNormalizer
+    * BakedReflectionProbe
+    * CopyPosition
+    * CustomBoundingBox
+    * EnableRendererWithLightId
+    * EnvironmentBrandingManager
+    * Mirror
+    * ObjectMesh
+    * SDFArrayManager
+    * SDFPoint
+    * Spectrogram
+    * SpectrogramRowPropertyAnimator
+    * TextureProcessor3D
+    * TrackLaneRing
+    * TrackLaneRingsManager
+    * TransformSpectrogram
 <hr>
 
 ## PAQ
-Lets call this one "Potentially-Asked-Questions" because this like just came public..
+Lets call this one "Potentially-Asked-Questions" because this just came public..
 ??? info "WHAT IS THIS?"
     "Environment Data" (Pending revolutionary rebranding) is a JSON file similar to chroma logs, but contains significantly more information.
     
-    Ever want the position or rotation of an object? Ever want the collider bounds of an object? You will probably love this.
+    Have you ever wanted the position or rotation of a specific gameobject? 
 
     <hr>
 
     Each environment here is represented as a JSON file.
     <br> It consists of:
 
-    **Environment Data** <br> : (Environment titles, colorScheme, and default fog parameters)
+    **Environment Data** <br> : (Environment titles, colorScheme, fog parameters, sizeData, lightTracks, uniqueMaterials, and uniqueMeshes)
 
-    **Object Data** <br> :  (Name, Chroma ID, and a select-list of components)
+    **Object Data** <br> :  (Name, Chroma ID, activeSelf, layer, and a select-list of components)
+
+    (Every object also has an instanceId)
 
     <hr>
 
-    !!! example "EnvironmentData Example"
+    !!! example "EnvironmentData Schema"
         ```json
         {
           "environmentData": {
-            "environmentTitle": "The First",
-            "environmentId": "DefaultEnvironment",
+            "environmentTitle": "The First", // The name you see in-game
+            "environmentId": "DefaultEnvironment", // The internal / json name
             "colorScheme": {
               "colorLeft": [float,float,float],
               "colorRight": [float,float,float],
               "envColorLeft": [float,float,float],
               "envColorRight": [float,float,float],
+              "envColorWhite": [float,float,float],
               "obstacleColor": [float,float,float],
               "envColorLeftBoost": [float,float,float],
-              "envColorRightBoost": [float,float,float]
+              "envColorRightBoost": [float,float,float],
+              "envColorWhiteBoost": [float,float,float]
             },
-            "fogParams": {
+            "fogParams": { // Default fog parameters for the environment
               "offset": float,
               "height": float,
               "startY": float,
-              "attenuation": float
-            }
+              "attenuation": float,
+              "autoExposureLimit": float,
+            },
+            "sizeData": { // Irrelevant
+              "floorType": "",
+              "ceilingType": "",
+              "trackLaneType": ""
+            },
+            "lightTracks": { // Irrelevant
+              "eventTracks": {},
+              "groupPages": {}
+            },
+            "uniqueMaterials": [
+              {
+                "hash": "",
+                "name": "",
+                "shader": "",
+                "color": [float,float,float,float],
+                "enabledShaderKeywords": [string[]], // All enabled shader keywords on the material
+                "shaderProperties": {} // Every shader property value specific to the material
+              }
+            ],
+            "uniqueMeshes": [
+              {
+                "name": "",
+                "hash": "",
+                "boundsSize": [float,float,float],
+                "boundsCenter": [float,float,float]
+              }
+            ]
           },
           "objects": [
             {
               "name": "GameObject Name",
               "id": "ChromaID",
+              "activeSelf": bool, // If the object is active or not
+              "layer": "", // The Unity object layer
               "components": {
                 "Transform": {
                   "position": [float,float,float],
                   "localPosition": [float,float,float],
-                  "rotation": [float,float,float], // Euler Angles
-                  "localRotation": [float,float,float], // Euler Angles
+                  "rotation": [float,float,float],
+                  "localRotation": [float,float,float],
                   "scale": [float,float,float]
                 },
                 "OtherComponent": {}
@@ -458,17 +367,7 @@ Lets call this one "Potentially-Asked-Questions" because this like just came pub
         }
         ```
 
-        > In the future, there will be an API that allows you to access this data from your scripts with a fully functional, easy-to-use class interface. Is this cool? plsbecoolthistookmesolongtocreate
-
-
-??? info "Which versions of BeatSaber are sampled?"
-    The following versions are currently sampled:
-
-    - 1.29.1
-    - 1.34.2
-    - 1.37.1
-    - 1.39.1
-    - 1.40.0
+        > Unfortunately, you will have to develop your own parser for the time being. <br> An API oroviding clean usage of this data inside of a script is still under development.
 <hr>
 
 ??? warning "Download buttons dont work?"

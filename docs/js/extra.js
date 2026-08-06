@@ -92,7 +92,7 @@ function downloadFromGithub() {
   const version = parameters.ver;
   const env = parameters.env;
   
-  fetch(`https://raw.githubusercontent.com/UGEcko/Chroodle/refs/heads/main/EnvironmentData/${version}/EnvInfo_${env}Environment.json`)
+  fetch(`https://raw.githubusercontent.com/UGEcko/Chroodle/refs/heads/main/EnvironmentData/${version}/${env}Environment.json`)
     .then(response => response.blob())
     .then(blob => {
       const filename = `EnvInfo_${env}_${version}.json`
