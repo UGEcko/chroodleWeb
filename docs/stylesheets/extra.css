@@ -1,7 +1,11 @@
 :root  > * {
-  --md-primary-fg-color: #5968c1;
-  --md-primary-bg-color: #F4A261;
-  --md-accent-fg-color: #a75ec6;
+  --md-primary-fg-color: #6a97b8;
+  --md-primary-bg-color: #cecece;
+  --md-accent-fg-color: #d36666;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #000000;
 }
 
 
