@@ -17,7 +17,6 @@ Chroma IDs may seem complicated for some at first, but rest assured they are inc
 Look at this ID. Can you tell what object this represents? Perhaps what environment this object is in? 
 
 If you answered the BTS Environment and the "COMBO" text, you are correct! **MOST** IDs consist of the environment ID/name at the beginning and the object name at the end. Some IDs may start with `GameCore`, there doesn't seem to be a pattern of which environments have this or don't, but common ones are Timbaland, Crab Rave, Skrillex, etc. (Perhaps its older environments).
-But that's not the best way to look at it.
 
 For a deeper understanding, think about the actual object in the scene. ComboText is the child of the ComboPanel, ComboPanel is the child of LeftPanel, LeftPanel is the child of NarrowGameHUD, etc... This is how Chroma creates the IDs, by reading every single object in the environments hierarchy and assigning it a unique ID. A child object has the ID of its parent object along with its own.
 
