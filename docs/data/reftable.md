@@ -1,7 +1,5 @@
 # Reference Tables
 
-A page to reference various 
-
 ## Geometry Reference Table
 
 | Primitives | Shaders |
@@ -9,13 +7,15 @@ A page to reference various
 | Sphere     | Standard
 | Capsule    | OpaqueLight
 | Cylinder   | TransparentLight
-| Cube       | BaseWater
-| Plane      | BillieWater
-| Quad       | BTSPillar
-| Triangle   | InterscopeConcrete
+| Cube       | Glowing
+| Plane      | BaseWater
+| Quad       | BillieWater
+| Triangle   | BTSPillar
+|            | InterscopeConcrete
 |            | Interscope Car
 |            | Obstacle (Broken)
 |            | WaterfallMirror
+
 
 <hr>
 
