@@ -57,9 +57,9 @@ To organize and future proof, links will be organized in categories, some being 
 [ChroMapper Tutorial (Youtube)](https://youtu.be/6SixwKR43Zg)
 
 !!! warning "Notice"
-    ChroMapper has grown a lot since this video has been made, so some things you may have to look in other spots for, but for the most part everything is the same.
+    This video is outdated, while most of the video remains the same, some things you may have to dig around for.
 
-[PropEdit (ChroMapper) guide (Youtube)](https://www.youtube.com/watch?v=FXcnebgOLpA) <br> : Some weird whimsical random guys guide on PropEdit, and basic Noodle Extensions usage of PropEdit in ChroMapper!
+[PropEdit (ChroMapper) guide (Youtube)](https://www.youtube.com/watch?v=FXcnebgOLpA) <br> : Some random weird guys guide on PropEdit, and basic Noodle Extensions usage of PropEdit in ChroMapper!
 !!! info 
     "PropEdit" is a ChroMapper plugin that focuses on making modhcarts easier for those who aren't into script-based solutions. The plugin provides a UI that enables the mapper to add most of what the Heck Suite offers into their maps effortlessly.
     > Note: While the video is around a year old and many updates have happened since, it is still a great introduction to the plugin.
@@ -78,9 +78,13 @@ To organize and future proof, links will be organized in categories, some being 
 
 ## Tools
 
-[Photo Multitool](https://www.photomultitool.com/tools) <br> : A slew of random tools for editing photos. Yes.
+[Beat Timer](https://beat-timer.webry.com/) <br> : A web-based alternative to Audacity and Arrow Vortex combined, allowing you to normalize audio, fetch the BPM of a song, and offset the audio to be on beat.
 
-[Asset Bundle Extrator (UABE)](https://github.com/SeriousCache/UABE) <br> : Extract assets from a Unity AssetBundle
+[TextureCreate](https://gameanimation.info/texture-create/) <br> : A web-based texture and material generation tool.
+
+[Photo Multitool](https://www.photomultitool.com/tools) <br> : A slew of random tools for editing photos.
+
+[Asset Bundle Extrator (UABE)](https://github.com/SeriousCache/UABE) <br> : Extract assets from a Unity AssetBundle.
 
 [Video Compressor](https://8mb.video/) <br> : Simple video compressor, specify the file size aswell!
 
@@ -95,6 +99,8 @@ To organize and future proof, links will be organized in categories, some being 
 
 [Shader Pragma Directives (Unity Docs)](https://docs.unity3d.com/Manual/SL-PragmaDirectives.html)
 
+[Shader Knowledge](https://github.com/pema99/shader-knowledge)
+
 [Shader GPU Instancing (Github)](https://github.com/pema99/shader-knowledge/blob/main/gpu-instancing.md) <br> : Unity HLSL Shader Instancing + some.
 
 [Learn shader effects | Ronja Tutorials](https://www.ronja-tutorials.com) <br> : Learn a bunch of shader effects here.
@@ -107,31 +113,29 @@ To organize and future proof, links will be organized in categories, some being 
 
 [Surface Shader Examples in Unity (Unity Docs)](https://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html) <br> : A bunch of examples with surface shading.
 
-[Unity Built-In Shader Variables (Unity Docs)](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html) <br> : (!IMPORTANT!)
+[Unity Built-In Shader Variables (Unity Docs)](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html) <br> : A handfull of included shader variables, some you will likely use. Study these!
 
 [Unity "UnityCG" Include source (Unity Docs)](https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/CGIncludes/UnityCG.cginc) <br> : "What does `#include "UnityCG.cginc"` add to my shader file?" This!
 
 [Standard CG Shader Library](https://developer.download.nvidia.com/cg/index_stdlib.html) <br> : A bunch of math functions included with the standard library.
 
-[Shader Knowledge](https://github.com/pema99/shader-knowledge)
-
-[iquilezles.](https://iquilezles.org/articles/) <br> : An absolute goldmine of knowledge with shader.. Just shader.
+[iquilezles.](https://iquilezles.org/articles/) <br> : An absolute goldmine of knowledge with shaders.
 
 [The Book of Shaders](https://thebookofshaders.com/01/) <br> : A great introduction to shaders!
 
-[Writing HLSL (Unity Docs)](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html) <br> : Learn how to write HLSL programs
+[Writing HLSL (Unity Docs)](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html) <br> : Learn how to write HLSL programs.
 
 [Shader Anatomy (Unity)](https://learn.unity.com/tutorial/shaderlab-anatomy-of-a-shader) <br> : Learn about the structure of a HLSL shader!
 
-[Global Variables for BeatSaber Shaders (1.29.1)](https://pastebin.com/XKmuwJZz) <br> : All Global Variables for shaders found on BeatSaber shaders on 1.29.1
+[Global Variables for BeatSaber Shaders (1.29.1)](https://pastebin.com/XKmuwJZz) <br> : All Global Variables for shaders found on BeatSaber shaders on 1.29.1.
 
 [Shader "Did you knows" by Owen](https://github.com/OwenTheProgrammer/The-Shader-Grimoire/blob/main/DidYouKnow/README.md) <br> : A great source of niche (unity) shader information. (Recommended to bookmark if you are a beginner especially!)
 
 ### Assets
 
-[Noise Pack (Free)](https://opengameart.org/content/noise-texture-pack) <br> : Its a free pack of noise textures cmon
+[Noise Pack (Free)](https://opengameart.org/content/noise-texture-pack) <br> : A pack of 700+ noise textures.
 
-[Gradient Pack (Free)](https://opengameart.org/content/gradient-texture-pack) <br> : Its a free pack of gradient textures CMON.
+[Gradient Pack (Free)](https://opengameart.org/content/gradient-texture-pack) <br> : A pack of 300+ gradient textures.
 
 
 ### Unity Packages
