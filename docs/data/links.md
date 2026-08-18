@@ -140,9 +140,13 @@ To organize and future proof, links will be organized in categories, some being 
 
 ### Unity Packages
 
-[CurveMaster (30$)](https://assetstore.unity.com/packages/tools/animation/curve-master-252505) <br> : A tool for tuning your animation curves in Unity.
+[Vivify Template](https://github.com/Swifter1243/VivifyTemplate) <br> : The package that contains the tools necessary to properly setup your unity project for vivify creation, bundle exporting, and a bunch of examples and tools to make the process easier.
 
 [Better UnityAnimationWindow (Audio Waveforms!)](https://github.com/swifter1243/UnityAnimationWindow) <br> : Add your song to the animation window as a waveform WITH beat markers!
+
+
+[CurveMaster (30$)](https://assetstore.unity.com/packages/tools/animation/curve-master-252505) <br> : A tool for tuning your animation curves in Unity.
+
 
 [Chrunity](https://github.com/UGEcko/Chrunity) <br> : A tool that allows you to place Chroma "Geometry" objects in Unity and port it into your map.
 
